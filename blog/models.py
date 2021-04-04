@@ -1,10 +1,10 @@
 from django.db import models
 
-
+# Blog category model
 class Category(models.Model):
     name = models.CharField(max_length=20)
 
-
+# Blog Post model
 class Post(models.Model):
     title = models.CharField(max_length=255)
     body = models.TextField()
@@ -12,7 +12,7 @@ class Post(models.Model):
     last_modified = models.DateTimeField(auto_now=True)
     categories = models.ManyToManyField("Category", related_name="posts")
 
-
+# Blog comment model
 class Comment(models.Model):
     author = models.CharField(max_length=60)
     body = models.TextField()

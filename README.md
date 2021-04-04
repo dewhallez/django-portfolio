@@ -1,4 +1,5 @@
 # Simple Portfolio web application with Django.
+    Porfolio application displaying projects and Blog.
 
 # Requirements
     asgiref==3.3.1

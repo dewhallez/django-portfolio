@@ -1,6 +1,6 @@
 from django import forms
 
-# Create form for user comments
+# create form for user comments
 class CommentForm(forms.Form):
     author = forms.CharField(
         max_length=60,
